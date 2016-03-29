@@ -4,10 +4,12 @@ rvm:
 #  - ruby-head
 script: bundle exec jekyll build
 after_success:
+  - echo .travis/ssh-config >> ~/.ssh/config
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
   - chmod 600 deploy.key
   - md5sum deploy.key
-  - rsync -av -e "ssh -o 'UserKnownHostsFile=/dev/null' -o 'StrictHostKeyChecking=no' -i deploy.key" _site/ ledyba@shell.osdn.jp:~/saccubus/htdocs/
+  - cp deploy.key ~/.ssh/
+  - rsync -av -e ssh _site/ ledyba@shell.osdn.jp:~/saccubus/htdocs/
 
 env:
   global:
