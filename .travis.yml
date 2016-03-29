@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 2.2.0
 script: bundle jekyll build
 after_success:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
