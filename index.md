@@ -1,7 +1,7 @@
 ---
 title: 「さきゅばす」公式サイトへようこそ！
 tags: [getting_started]
-sidebar: general_sidebar
+sidebar: home_sidebar
 type: homepage
 toc: false
 ---
@@ -21,7 +21,9 @@ toc: false
 
 # サポート
 
-サポートに関しては、githubのissueでお願いします。
+サポートに関しては、[githubのissue](https://github.com/Saccubus/Saccubus/issues)でお願いします。
+
+[2chのスレッド](http://itest.2ch.net//test/read.cgi/software/1449586179/l50)もあります。
 
 # 外部ページ
  - [OSDNのプロジェクトページ](http://sourceforge.jp/projects/saccubus/)
