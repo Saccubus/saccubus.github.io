@@ -3,11 +3,9 @@ rvm:
   - ruby-head
 script: bundle exec jekyll build
 after_success:
-  - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
-  - cp deploy.key ~/.ssh/
-  - chmod 600 ~/.ssh/deploy.key
-  - rsync -av _site/ ledyba@shell.osdn.jp:~/saccubus/htdocs/
+  - chmod 600 deploy.key
+  - rsync -av -e "ssh -o 'UserKnownHostsFile=/dev/null' -o 'StrictHostKeyChecking=no' -i deploy.key" _site/ ledyba@shell.osdn.jp:~/saccubus/htdocs/
 
 env:
   global:
