@@ -1,5 +1,6 @@
 language: ruby
 rvm:
+  - 2.3.0
   - ruby-head
 script: bundle exec jekyll build
 after_success:
