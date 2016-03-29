@@ -18,7 +18,7 @@ entries:
       url: https://osdn.jp/projects/saccubus/releases/
       output: web
     - title: 使い方
-      url: /help/
+      url: /usage/
       output: web
     - title: デモ
       url: /demos/
