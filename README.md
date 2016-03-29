@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Saccubus/saccubus.github.io.svg?branch=master)](https://travis-ci.org/Saccubus/saccubus.github.io)
 
-[さきゅばす公式サイト](saccubus.osdn.jp)のソースです。[Jekyll](https://jekyllrb.com/)で構築しています。
+[さきゅばす公式サイト](http://saccubus.osdn.jp/)のソースです。[Jekyll](https://jekyllrb.com/)で構築しています。
 
 # Pre requirements
 
@@ -14,7 +14,7 @@
 
 # 更新の仕方
 
-リポジトリにpushすると[travis-ci](https://travis-ci.org/Saccubus/saccubus.github.io)が走って自動で[ウェブサイト](saccubus.osdn.jp)が更新されます。
+リポジトリにpushすると[travis-ci](https://travis-ci.org/Saccubus/saccubus.github.io)が走って自動で[ウェブサイト](http://saccubus.osdn.jp/)が更新されます。
 
 # ローカルで動かす
 
