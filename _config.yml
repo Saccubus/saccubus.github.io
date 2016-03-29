@@ -79,5 +79,5 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 
-description: "さきゅばすは、ニコニコ動画の動画を、コメント付きの動画として保存するソフトです。"
+description: "さきゅばすは、ニコニコ動画の動画をコメント付きの動画として保存するソフトです。"
 # the description is used in the feed.xml file
