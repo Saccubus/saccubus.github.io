@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.2.0
-script: bundle jekyll build
+script: bundle exec jekyll build
 after_success:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key

@@ -1,5 +1,7 @@
 # さきゅばす公式サイト
 
+[![Build Status](https://travis-ci.org/Saccubus/saccubus.github.io.svg?branch=master)](https://travis-ci.org/Saccubus/saccubus.github.io)
+
 さきゅばす公式サイトのソースです。[Jekyll](https://jekyllrb.com/)で構築しています。
 
 # Pre requirements
