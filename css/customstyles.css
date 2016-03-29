@@ -1015,3 +1015,24 @@ li.sidebarTitle {
     font-weight: bold;
     color: black;
     }
+
+.site-logo-wrapper {
+    position: relative;
+    width: 100%;
+}
+.site-logo-wrapper:before {
+    content:"";
+    display: block;
+    padding-top: 50%; /* 高さを幅の75%に固定 */
+}
+.site-logo {
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
