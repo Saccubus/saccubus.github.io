@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.3.0
-  - ruby-head
+#  - ruby-head
 script: bundle exec jekyll build
 after_success:
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
