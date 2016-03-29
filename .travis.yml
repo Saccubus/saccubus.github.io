@@ -1,0 +1,12 @@
+language: ruby
+script: bundle jekyll build
+after_success:
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n" >> ~/.ssh/config
+  - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
+  - cp deploy.key ~/.ssh/
+  - chmod 600 ~/.ssh/deploy.key
+  - rsync -av _site/ ledyba@shell.osdn.jp:~/saccubus/htdocs/
+
+env:
+  global:
+    secure: qJxYUXutPf52K3ouktEdCRQmBW2uz4EWGaC6S273bzuntPxSSU2t/fRWzmTrM6rqAPpWj55Aydo5eORL9u5CWeMmBM9yh07og/TBr03AYCNbQ7sM+7ryXWcDMryfZFtfro1RP96VucLIVc6akgZssa/J9+Dbb83I3KG9549ZZDaNXEkAfOe+enF+ui885K8jWxBaSsiOT41zQAQOxGbxi3RwkdE9eQ28WilUOpNjZ4hu1mf6TVX+TVvOB3srJUia+agM+vN4Ypr1eK+ddKd1RSqsrKhmSa29OvpGv9tjtZNwQeYX8m0X5EhoGA6qZEAV0ZjegxR4FNrocYBWZklu/cTV1IgWwzB7Wbks0TqJlMoYqKt9ARzxlmMW5soe+UAiZml5TQJwCGuNl/lhUJIDuzxoJKLh9/vKPVaM5cgmx7t9A7f5Ly3lDtu79/95Oc3kZPJuHZtV+dFinyHAlshYnS96NJA+CnLsEa/ZOLzaAnoAv8ucnUQFZeq3mScOLm2p/E2jTmOK/pgyFmnrfWUR5Mkn2rNHYI4K9Pbw7m6iwclHPp5KBNaQGi+73pGb60QAGsBYRI/vggolmiPd2KElu9peAXwO16DYEwqoa7b9hqe63KkO8dI58wgLfuXrkplbAjqJ2Sss+MYj+j8L+yBjprGeopkvQCLiWMYFSPqPayI=
