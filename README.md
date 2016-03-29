@@ -14,7 +14,7 @@
 
 # 更新の仕方
 
-リポジトリにpushするとtravis-ciが走って自動で[ウェブサイト](saccubus.osdn.jp)が更新されます。
+リポジトリにpushすると[travis-ci](https://travis-ci.org/Saccubus/saccubus.github.io)が走って自動で[ウェブサイト](saccubus.osdn.jp)が更新されます。
 
 # ローカルで動かす
 
