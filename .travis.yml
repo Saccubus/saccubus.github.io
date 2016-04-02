@@ -4,7 +4,7 @@ rvm:
 #  - ruby-head
 script: bundle exec jekyll build
 after_success:
-  - echo .travis/ssh-config >> ~/.ssh/config
+  - cat .travis/ssh-config >> ~/.ssh/config
   - openssl aes-256-cbc -k "$SERVER_KEY" -in .travis/deploy_key.enc -d -a -out deploy.key
   - chmod 600 deploy.key
   - md5sum deploy.key
