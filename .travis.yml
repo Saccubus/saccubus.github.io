@@ -9,6 +9,7 @@ after_success:
   - chmod 600 deploy.key
   - md5sum deploy.key
   - cp deploy.key ~/.ssh/
+  - ssh ledyba@shell.osdn.jp id
   - rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
 
 env:
