@@ -13,7 +13,3 @@ after_success:
   - md5sum ~/.ssh/deploy.key
   - ssh ledyba@shell.osdn.jp id
   - rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
-
-env:
-  global:
-    secure:
