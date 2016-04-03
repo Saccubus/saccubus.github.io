@@ -10,8 +10,9 @@ after_success:
   - md5sum deploy.key
   - cp deploy.key ~/.ssh/
   - ls -alh --color ~/.ssh/
-  - yes "" | ssh ledyba@shell.osdn.jp id
-  - yes "" | rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
+  - cat ~/.ssh/config
+  - ssh ledyba@shell.osdn.jp id
+  - rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
 
 env:
   global:
