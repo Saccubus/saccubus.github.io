@@ -11,6 +11,7 @@ after_success:
   - cp deploy.key ~/.ssh/
   - ls -alh --color ~/.ssh/
   - cat ~/.ssh/config
+  - ssh-add ~/.ssh/deploy.key
   - ssh ledyba@shell.osdn.jp id
   - rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
 
