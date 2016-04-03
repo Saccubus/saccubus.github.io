@@ -1,3 +1,5 @@
 Host shell.osdn.jp
-  StrictHostKeyChecking no
-  IdentityFile ~/.ssh/deploy.key
+  StrictHostKeyChecking   no
+  IdentityFile            ~/.ssh/deploy.key
+  CheckHostIP             no
+  PasswordAuthentication	no
