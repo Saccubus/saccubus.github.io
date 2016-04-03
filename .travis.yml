@@ -11,6 +11,7 @@ before_install:
   - ls -alh --color ~/.ssh/
   - cat ~/.ssh/config
   - md5sum ~/.ssh/deploy.key
+  - ssh -V
   - ssh ledyba@shell.osdn.jp id
 after_success:
   - rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
