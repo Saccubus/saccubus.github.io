@@ -77,8 +77,8 @@ defaults:
       search: true
       sidebar: tags_sidebar
 
+google_analytics: "UA-76381550-1"
 # these are defaults used for the frontmatter for these file types
-
 
 description: "さきゅばすは、ニコニコ動画の動画をコメント付きの動画として保存するソフトです。"
 # the description is used in the feed.xml file
