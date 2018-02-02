@@ -15,7 +15,7 @@ toc: false
 変換にはffmpegを用いており、iPodやPSP向けの動画を作成することも可能です。
 
 # 最新リリース
-2.0b4から2-clause BSDとのデュアルライセンスに[なりました！](http://ledyba.org/2013/05/26225034.php)
+2.0b4から2-clause BSDとのデュアルライセンスに[なりました！](https://7io.org/2013/05/26225034.php)
 
 <span style="font-size: x-large;">[ダウンロードはこちらから。](http://sourceforge.jp/projects/saccubus/releases/)</span>
 
