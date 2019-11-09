@@ -23,21 +23,12 @@ entries:
     - title: デモ
       url: /demos/
       output: web
-    - title: バグ報告
-      url: https://github.com/Saccubus/Saccubus/issues
-      output: web
 
   - title: For developers
     output: web
     folderitems:
     - title: License
       url: /dev/license/
-      output: web
-    - title: "How to build"
-      url: /dev/build/
-      output: web
-    - title: さきゅばすの歩き方
-      url: /dev/trip/
       output: web
     - title: OSDN/Saccubus
       url: https://osdn.jp/projects/saccubus/
