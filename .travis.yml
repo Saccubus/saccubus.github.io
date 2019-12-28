@@ -15,4 +15,4 @@ before_install:
   - ssh ledyba@shell.osdn.jp id
 after_success:
 #  - rsync -rlOtv --delete --stats _site/ ledyba@shell.osdn.jp:/home/groups/s/sa/saccubus/htdocs
-  - ssh ledyba@shell.osdn.jp yes # do nothing
+  - ssh ledyba@shell.osdn.jp echo "Hey!" # do nothing
