@@ -28,9 +28,6 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: nasda60@hotmail.com
-# used as a contact email for the Feedback link in the top navigation bar
-
 highlighter: rouge
 # library used for syntax highlighting
 
